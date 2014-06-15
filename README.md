@@ -1,14 +1,13 @@
-This guide with allow you to complete the following on Ubuntu 13.
+This guide with allow you to complete the following on Ubuntu 12.
 
 ----------------------------------------------------------------------
 
 
 - Install Deluged 1.3.6
 - Install Deluge-web 1.3.6
-- Install LibTorrent 0.16.13.0 with Proxy UDP fix included
+- Install LibTorrent 0.16.16.0
 
 
-----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Step 1. Install required dependencies for the above applications.
 
@@ -19,21 +18,21 @@ apt-get install python-libtorrent python-libtorrent libboost-dev libboost-test-d
 ----------------------------------------------------------------------
 Step 2. Download the LibTorrent-rasterbar files from the following Google Code location.
 
-https://libtorrent.googlecode.com/files/
+https://code.google.com/p/libtorrent/
 
-Note: For me this was libtorrent-rasterbar-0.16.13.tar.gz as it was the latest version.
+Note: For me this was libtorrent-rasterbar-0.16.16.tar.gz as it was the latest version.
 
 
 ----------------------------------------------------------------------
 Step 3. Extract the LibTorrent-rasterbar files.
 
-tar xfv libtorrent-rasterbar-0.16.13.tar.gz
+tar xfv libtorrent-rasterbar-0.16.16.tar.gz
 
 
 ----------------------------------------------------------------------
 Step 4. Move into the directory and start the configuration process on the source files.
 
-cd libtorrent-rasterbar-0.16.13/
+cd libtorrent-rasterbar-0.16.16/
 ./configure --enable-python-binding
 
 
