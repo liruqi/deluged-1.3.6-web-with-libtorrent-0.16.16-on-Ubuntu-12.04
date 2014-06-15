@@ -1,4 +1,4 @@
-This guide with allow you to complete the following on Ubuntu 12.
+This guide with allow you to complete the following on Ubuntu 12.04
 
 ----------------------------------------------------------------------
 
@@ -69,22 +69,23 @@ export LD_LIBRARY_PATH=/usr/local/lib/
 
 
 ----------------------------------------------------------------------
-Step 9. Start Python and import libtorrent
-
-python
->> import libtorrent
-
-
-----------------------------------------------------------------------
-Step 10. Check if its now installed and available.
+Step 9. Check if libtorrent is installed and available.
 
 python -c "import libtorrent as lt; print lt.version"
 
 
 ----------------------------------------------------------------------
+Step 10. Download deluged-1.3.6 (From http://git.deluge-torrent.org/deluge)
+
+wget http://git.deluge-torrent.org/deluge/snapshot/deluge-1.3.6.zip
+unzip deluge-1.3.6.zip
+cd deluge-1.3.6.zip
+
+
+----------------------------------------------------------------------
 Step 11. Install deluged and deluge-web
 
-apt get deluged deluge-web
+python setup.py install
 
 
 ----------------------------------------------------------------------
@@ -103,6 +104,7 @@ THIS INFORMATION WAS COLLECTED FROM THE FOLLOWING LOCATIONS ON THE WEB.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
+https://github.com/iMeZz2014/Deluged-1.3.6---deluge-web-with-LibTorrent-0.16.13.0-on-Ubuntu-13
 https://code.google.com/p/libtorrent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=439
 https://coderwall.com/p/muvnow
 http://stackoverflow.com/questions/14047653/python-bindings-for-libtorrent-rasterbar-are-not-working
